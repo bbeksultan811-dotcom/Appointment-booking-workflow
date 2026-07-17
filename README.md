@@ -115,11 +115,11 @@ Respond to Webhook
 
 | Workflow | Booking Request |
 |-----------|-----------------|
-| <img src="./images/workflow2.png.png" width="100%"> | <img src="./images/requiest1.png.png" width="100%"> |
+| <img src="./Screenshots/workflow2.png.png" width="100%"> | <img src="./Screenshots/requiest1.png.png" width="100%"> |
 
-| Calendar Event | Confirmation Email |
+| Calendar Event |
 |----------------|--------------------|
-| <img src="./images/calendar.png.png" width="100%"> | <img src="./images/confirmation-email.png" width="100%"> |
+| <img src="./Screenshots/calendar.png.png" width="100%"> |
 
 ---
 
