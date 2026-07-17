@@ -115,35 +115,21 @@ Webhook Response
 
 ## Workflow
 
-<p align="center">
-  <img src="images/workflow2.png" width="850">
-</p>
+![Workflow](images/workflow2.png)
 
 ---
 
 ## Booking Request
 
-<p align="center">
-  <img src="images/request1.png" width="850">
-</p>
+![Request](images/request1.png)
 
 ---
 
 ## Calendar Event
 
-<p align="center">
-  <img src="images/calendar.png" width="850">
-</p>
-
+![Calendar](images/calendar.png)
 ---
 
-## Confirmation Email
-
-<p align="center">
-  <img src="images/confirmation-email.png" width="850">
-</p>
-
----
 
 ## Confirmation Email
 
