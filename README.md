@@ -115,19 +115,19 @@ Webhook Response
 
 ## Workflow
 
-![Workflow](images/workflow2.png)
+![Workflow](images/workflow2.png.png)
 
 ---
 
 ## Booking Request
 
-![Request](images/request1.png)
+![Request](images/request1.png.png)
 
 ---
 
 ## Calendar Event
 
-![Calendar](images/calendar.png)
+![Calendar](images/calendar.png.png)
 ---
 
 
