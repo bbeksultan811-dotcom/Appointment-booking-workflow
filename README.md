@@ -2,20 +2,20 @@
 
 An AI-powered appointment booking workflow built with **n8n**, **Gemini AI**, **Google Calendar**, **Gmail**, and **JavaScript**.
 
-The workflow automatically extracts booking details from a natural language request, checks calendar availability, creates a Google Calendar event if the requested slot is free, and sends a confirmation email. If the requested time is unavailable, the customer receives a notification asking them to choose another time.
+The workflow automatically extracts booking details from natural language, checks Google Calendar availability, creates appointments, and sends confirmation emails.
 
 ---
 
 # Business Problem
 
-Many small businesses manually manage appointment requests received through websites, emails, or contact forms.
+Many businesses manually process appointment requests from emails, websites, or contact forms.
 
-This process often leads to:
+This often causes:
 
 - Double bookings
 - Slow response times
-- Manual calendar management
-- Missed appointments
+- Manual scheduling
+- Human errors
 - Increased administrative work
 
 This workflow automates the entire booking process.
@@ -24,13 +24,13 @@ This workflow automates the entire booking process.
 
 # Solution
 
-The automation performs the following steps:
+The workflow performs the following steps:
 
-1. Receives an appointment request.
-2. Uses Gemini AI to extract booking information.
-3. Converts the AI response into structured JSON.
-4. Checks Google Calendar for existing events.
-5. Creates a calendar event if the time slot is available.
+1. Receives a booking request via Webhook.
+2. Uses Gemini AI to extract appointment details.
+3. Converts AI output into structured JSON.
+4. Checks Google Calendar availability.
+5. Creates a calendar event if the slot is available.
 6. Sends a confirmation email.
 7. Sends an unavailable notification if the slot is already booked.
 
@@ -38,16 +38,16 @@ The automation performs the following steps:
 
 # Features
 
-- AI-powered information extraction
-- Natural language appointment requests
+- AI-powered appointment extraction
+- Natural language processing
 - Google Calendar integration
 - Gmail integration
 - Automatic availability check
-- Automatic appointment creation
-- Email notifications
+- Automatic event creation
+- Confirmation emails
+- Busy notifications
 - Conditional workflow logic
 - Error handling
-- JSON parsing
 
 ---
 
@@ -91,60 +91,46 @@ Create Event  Send Busy Email
 Send Confirmation Email
  │
  ▼
-Webhook Response
+Respond to Webhook
 ```
 
 ---
 
 # Project Structure
 
-```
-/
+```text
+.
 ├── workflow.json
 ├── README.md
-└── images/
+└── images
     ├── workflow.png
     ├── booking-request.png
     ├── calendar-event.png
-    ├── confirmation-email.png
+    └── confirmation-email.png
 ```
 
 ---
 
 # Screenshots
 
-## Workflow
+| Workflow | Booking Request |
+|-----------|-----------------|
+| <img src="./images/workflow2.png.png" width="100%"> | <img src="./images/requiest1.png.png" width="100%"> |
 
-![Workflow](images/workflow2.png.png)
-
----
-
-## Booking Request
-
-![Request](images/request1.png.png)
-
----
-
-## Calendar Event
-
-![Calendar](images/calendar.png.png)
----
-
-
-## Confirmation Email
-
-![Email](images/confirmation-email.png)
+| Calendar Event | Confirmation Email |
+|----------------|--------------------|
+| <img src="./images/calendar.png.png" width="100%"> | <img src="./images/confirmation-email.png" width="100%"> |
 
 ---
 
 # Example Request
 
-```
+```text
 Hello,
 
 My name is John Smith.
 
-I'd like to schedule a meeting tomorrow at 2 PM.
+I'd like to book a meeting tomorrow at 2 PM.
 
 My email is john@example.com.
 ```
@@ -169,22 +155,22 @@ My email is john@example.com.
 - Faster customer response
 - Reduced manual work
 - No double bookings
-- Fully automated scheduling
-- Improved customer experience
+- Automated scheduling
+- Better customer experience
 - Easy to customize
-- Ready for production improvements
+- Production-ready foundation
 
 ---
 
 # Challenges Solved
 
-During development several real-world integration issues were solved:
+During development several real-world automation challenges were addressed:
 
-- AI output normalization
+- AI response normalization
 - 24-hour time formatting
 - Google Calendar availability detection
 - Data persistence between workflow nodes
-- Conditional routing
+- Conditional workflow routing
 - API response parsing
 - Dynamic email generation
 
@@ -192,16 +178,17 @@ During development several real-world integration issues were solved:
 
 # Possible Improvements
 
-- Multiple calendars
-- Outlook Calendar support
+- Outlook Calendar integration
+- Microsoft Teams integration
 - Automatic free-slot suggestions
 - Time zone detection
 - CRM integration
 - Slack notifications
 - SMS reminders
-- Rescheduling
-- Cancellation workflow
+- Appointment cancellation
+- Appointment rescheduling
 - Database logging
+- Multi-user scheduling
 
 ---
 
@@ -216,10 +203,20 @@ During development several real-world integration issues were solved:
 - Business Process Automation
 - Google Workspace Automation
 - Error Handling
-- Production Workflow Design
+- Production Workflow Development
+
+---
+
+# Repository Contents
+
+- Workflow JSON
+- Project documentation
+- Architecture overview
+- Workflow screenshots
+- Example input/output
 
 ---
 
 # Author
 
-Built by **Zvc Qds** as part of an AI Automation Engineering portfolio.
+Built by **Zvc Qds** as part of an AI Automation Engineering portfolio..
