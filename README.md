@@ -219,4 +219,4 @@ During development several real-world automation challenges were addressed:
 
 # Author
 
-Built by **Zvc Qds** as part of an AI Automation Engineering portfolio..
+Built by Farangiz as part of an AI Automation Engineering portfolio..
